@@ -1,83 +1,65 @@
 # ============================================
-son = int(input("Sonni kiriting: "))
-
-if son % 2 == 0:
-    print(f"{son} - juft son")
-else:
-    print(f"{son} - toq son")
-
-print("-" * 40)
+# 1-MASHQ: Son musbat yoki manfiy ekanini aniqlash
 # ============================================
-son2 = float(input("Sonni kiriting: "))
+print("=== 1-MASHQ: Musbat yoki manfiy ===")
+son1 = float(input("Sonni kiriting: "))
 
-if son2 > 0:
-    print(f"{son2} - musbat son")
-elif son2 < 0:
-    print(f"{son2} - manfiy son")
+if son1 > 0:
+    print(f"{son1} — musbat son\n")
+elif son1 < 0:
+    print(f"{son1} — manfiy son\n")
 else:
-    print("Bu son nolga teng")
+    print(f"{son1} — bu nol (na musbat, na manfiy)\n")
 
-print("-" * 40)
+
 # ============================================
-a = float(input("1-sonni kiriting: "))
-b = float(input("2-sonni kiriting: "))
-c = float(input("3-sonni kiriting: "))
-
-if a >= b and a >= c:
-    eng_katta = a
-elif b >= a and b >= c:
-    eng_katta = b
-else:
-    eng_katta = c
-
-print(f"Eng katta son: {eng_katta}")
-
-print("-" * 40)
+# 2-MASHQ: Son juft yoki toq ekanini aniqlash
 # ============================================
-son3 = int(input("Sonni kiriting: "))
+print("=== 2-MASHQ: Juft yoki toq ===")
+son2 = int(input("Butun son kiriting: "))
 
-if son3 % 5 == 0:
-    print(f"{son3} soni 5 ga qoldiqsiz bo'linadi")
+if son2 % 2 == 0:
+    print(f"{son2} — juft son\n")
 else:
-    print(f"{son3} soni 5 ga bo'linmaydi")
+    print(f"{son2} — toq son\n")
 
-print("-" * 40)
-# ==========================================
-ball = float(input("Ballni kiriting (0-100): "))
 
-if ball >= 90:
-    baho = "A"
-elif ball >= 80:
-    baho = "B"
-elif ball >= 70:
-    baho = "C"
-elif ball >= 60:
-    baho = "D"
-else:
-    baho = "F"
-
-print(f"Sizning bahoyingiz: {baho}")
-
-print("-" * 40)
 # ============================================
-yil = int(input("Yilni kiriting: "))
-
-if (yil % 4 == 0 and yil % 100 != 0) or (yil % 400 == 0):
-    print(f"{yil} - kabisa yil")
-else:
-    print(f"{yil} - oddiy yil")
-
-print("-" * 40)
+# 3-MASHQ: Ikki sondan kattasini chiqarish
 # ============================================
-harorat = float(input("Haroratni kiriting (Celsiy darajada): "))
+print("=== 3-MASHQ: Kattasini topish ===")
+a = float(input("Birinchi sonni kiriting: "))
+b = float(input("Ikkinchi sonni kiriting: "))
 
-if harorat <= 0:
-    holat = "Muzlash"
-elif harorat <= 15:
-    holat = "Sovuq"
-elif harorat <= 25:
-    holat = "Iliq"
+if a > b:
+    print(f"Katta son: {a}\n")
+elif b > a:
+    print(f"Katta son: {b}\n")
 else:
-    holat = "Issiq"
+    print(f"Ikkala son ham teng: {a}\n")
 
-print(f"Harorat holati: {holat}")
+
+# ============================================
+# 4-MASHQ: Yosh bo'yicha ruxsat tekshirish
+# ============================================
+print("=== 4-MASHQ: Yosh tekshirish ===")
+yosh = int(input("Yoshingizni kiriting: "))
+
+if yosh >= 18:
+    print("Ruxsat berildi\n")
+else:
+    print("Ruxsat berilmadi\n")
+
+
+# ============================================
+# 5-MASHQ: Son 100 dan katta yoki kichik ekanini aniqlash
+# ============================================
+print("=== 5-MASHQ: 100 bilan solishtirish ===")
+son3 = float(input("Sonni kiriting: "))
+
+if son3 > 100:
+    print(f"{son3} — 100 dan katta")
+elif son3 < 100:
+    print(f"{son3} — 100 dan kichik")
+else:
+    print(f"{son3} — aynan 100 ga teng")
